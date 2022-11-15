@@ -29,6 +29,11 @@ export default function Home({ data }) {
             {dt.toLocaleString(DateTime.DATETIME_FULL)}
           </code>
         </p>
+
+        <p className={styles.description}>
+          The API url on this environment is{" "}
+          <code className={styles.code}>{process.env.NEXT_PUBLIC_API_URL}</code>
+        </p>
       </main>
 
       <footer className={styles.footer}>
